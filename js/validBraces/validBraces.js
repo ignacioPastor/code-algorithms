@@ -10,7 +10,7 @@ function validBraces(braces) {
         mod = true;
       }
     });
-  } while (mod === true)
+  } while (mod === true);
 
   return braces === '';
 }
