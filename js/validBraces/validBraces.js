@@ -1,5 +1,5 @@
 function validBraces(braces) {
-  let pairs = ['()', '[]', '{}']
+  let pairs = ['()', '[]', '{}'];
   let mod;
 
   do {

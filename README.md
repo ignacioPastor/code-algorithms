@@ -1,7 +1,7 @@
 ## What Is CodeWars and Code Kata?
 CodeWars is an algorithm testing site to help learn a new language, improve your problem-solving skills or prepare for a technical interview.
 
-#### Code Kata then is a challenge to solve, paying attention more in the algorithmic solution than in the languaje you use.
+#### Code Kata then is a coding challenge to solve, paying attention more in the algorithmic solution than in the languaje you use.
 
 ## How Does CodeWars Work?
 - In each algorithm you are given a description to solve.
