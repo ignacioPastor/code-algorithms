@@ -1,10 +1,11 @@
 function cakes(recipe, available) {
-    let amountPies = -1;
+    let amountPies = Infinity;
+    let nPieIng;
 
     Object.keys(recipe).forEach(ingredient => {
-        let nPieIng = (available[ingredient] || 0) / recipe[ingredient];
+        nPieIng = (available[ingredient] || 0) / recipe[ingredient];
 
-        if (amountPies === -1 || nPieIng < amountPies) {
+        if (nPieIng < amountPies) {
             amountPies = nPieIng;
         }
     });
