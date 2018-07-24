@@ -5,5 +5,5 @@ CodeWars is an algorithm testing site to help learn a new language, improve your
 
 ## How Does CodeWars Work?
 - In each algorithm you are given a description to solve.
-- Tests given some public tests to view which means you can see the input and desired output. Hiddewn tests which can not be viewed are also given and will need to be solved. You have the ability to write your own tests for specific cases or to try and guess the hidden cases.
+- Tests given some public tests to view which means you can see the input and desired output. Hidden tests which can not be viewed are also given and will need to be solved. You have the ability to write your own tests for specific cases or to try and guess the hidden cases.
 - As long you solve challenges you achieve points (kudos), in order to promote to more complicated challenges.
