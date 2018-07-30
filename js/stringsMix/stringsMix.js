@@ -19,7 +19,10 @@ function customSort(a, b) {
   return arrA[1][0] > arrB[1][0] ? 1 : -1;
 }
 
+/** Configure the result string */
 function generateResult(d1, d2) {
+
+  // get all the different keys
   const occurrences = Array.from([...new Set([...Object.keys(d1), ...Object.keys(d2)])])
 
   let res = '';
