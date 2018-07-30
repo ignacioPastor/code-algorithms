@@ -20,9 +20,7 @@ function customSort(a, b) {
 }
 
 function generateResult(d1, d2) {
-  const concatKeys = Object.keys(d1).concat(Object.keys(d2));
-  const mySet = new Set(concatKeys);
-  const occurrences = Array.from(mySet);
+  const occurrences = Array.from([...new Set([...Object.keys(d1), ...Object.keys(d2)])])
 
   let res = '';
   occurrences.forEach(letter => {
@@ -41,7 +39,7 @@ function generateResult(d1, d2) {
     }
     res += '/';
   });
-  return res.substring(0, res.length - 1);
+  return res.substring(0, res.length - 1);  // remove the last '/'
 }
 
 /** Return n times the received letter */
@@ -70,7 +68,7 @@ function cleanData(text) {
   }, {});
 
   const significantOccur = Object.keys(myMap).reduce((acc, val) => {
-    const resp  = Object.assign({}, acc);
+    const resp  = { ...acc};
     if (myMap[val] > 1) resp[val] = myMap[val];
     return resp;
   }, {});
