@@ -3,19 +3,10 @@ Array.prototype.sameStructureAs = function (other) {
 };
 
 function checkLevel(obj1, obj2) {
-  const isArr1 = Array.isArray(obj1);
-  const isArr2 = Array.isArray(obj2);
-  if (isArr1 !== isArr2) {
-    return false;
-  }
-
-  if (isArr1) {
+  if (Array.isArray(obj1) !== Array.isArray(obj2)) return false;
+  if (Array.isArray(obj1)) {
     if (obj1.length !== obj2.length) return false;
-
-    return obj1.reduce((acc, val, index) => {
-      const myRes = checkLevel(val, obj2[index]);
-      return acc && myRes;
-    }, true);
+    return obj1.reduce((acc, val, index) => acc && checkLevel(val, obj2[index]), true);
   }
   return true;
 }
