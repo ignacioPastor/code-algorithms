@@ -1,3 +1,5 @@
+const { getArrNumber } = require('./../utils');
+
 function jumpingOnClouds(c) {
   let nJumps = 0;
   let index = 2;
@@ -16,6 +18,8 @@ function jumpingOnClouds(c) {
 }
 
 
+// Testing section
+
 const test0 = getArrNumber('0 0 1 0 0 1 0');
 console.log(jumpingOnClouds(test0)); // Expected 4
 
@@ -30,8 +34,3 @@ console.log(jumpingOnClouds(test4)); //Expected 53
 
 const test8 = getArrNumber('0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 0 0 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 0 1 0 0 1 0 1 0');
 console.log(jumpingOnClouds(test8)); // Expected 46
-
-
-function getArrNumber(str) {
-  return str.split(' ').map(n => parseInt(n));
-}

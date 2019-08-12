@@ -1,3 +1,5 @@
+const { getArrNumber } = require('./../utils');
+
 function sockMerchant(n, ar) {
   const occurrences = [...new Set(ar)];
   const countPairsMap = {};
@@ -12,6 +14,7 @@ function sockMerchant(n, ar) {
 
 }
 
+
 // Testing section
 
 const test0 = getArrNumber('10 20 20 10 10 30 50 10 20');
@@ -19,13 +22,3 @@ console.log(sockMerchant(9, test0)); // Expected 3
 
 const test1 = getArrNumber('1 1 1 2 2 3 4 5 4 6 7 6 6 1 7 9 9 12 11');
 console.log(sockMerchant(4234, test1)); // Expected 7
-
-
-/**
- * Convert to an array of numbers an string of numbers separated by spaces
- * @param {*} str string of numbers separated by spaces
- * @return array of numbers
- */
-function getArrNumber(str) {
-  return str.split(' ').map(n => parseInt(n));
-}

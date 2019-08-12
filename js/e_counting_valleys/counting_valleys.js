@@ -10,6 +10,8 @@ function countingValleys(n, s) {
   return nValleys;
 }
 
+
 // Testing section
+
 console.log(countingValleys(8, 'UDDDUDUU')); // Expected 1
 console.log(countingValleys(12, 'DDUUDDUDUUUD')); // Expected 2
