@@ -1,4 +1,3 @@
-const { getArrNumber } = require('./../utils');
 
 function jumpingOnClouds(c) {
   let nJumps = 0;
@@ -17,20 +16,6 @@ function jumpingOnClouds(c) {
   return nJumps;
 }
 
-
-// Testing section
-
-const test0 = getArrNumber('0 0 1 0 0 1 0');
-console.log(jumpingOnClouds(test0)); // Expected 4
-
-const test1 = getArrNumber('0 0 0 1 0 0');
-console.log(jumpingOnClouds(test1)); // Expected 3
-
-const test2 = getArrNumber('0 0 1 0 0 0 0 1 0 0');
-console.log(jumpingOnClouds(test2)); // Expected 6
-
-const test4 = getArrNumber('0 1 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 0 1 0 0 0 0 1 0 0 1 0 0 1 0 1 0 1 0 1 0 0 0 1 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1 0 0 0 1 0 1 0 0 0 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0');
-console.log(jumpingOnClouds(test4)); //Expected 53
-
-const test8 = getArrNumber('0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 0 0 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 0 1 0 0 1 0 1 0');
-console.log(jumpingOnClouds(test8)); // Expected 46
+module.exports = {
+  jumpingOnClouds
+}
