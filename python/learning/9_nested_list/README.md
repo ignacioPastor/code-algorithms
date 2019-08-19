@@ -1,4 +1,4 @@
-### Code Challege available at [Hackerrank](https://www.hackerrank.com/challenges/list-comprehensions/problem)
+### Code Challege available at [Hackerrank](https://www.hackerrank.com/challenges/nested-list/problem?h_r=profile)
 ---
 Given the names and grades for each student in a Physics class of `N` students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade.
 
