@@ -1,0 +1,22 @@
+{
+  "name": "code-algorithms",
+  "version": "1.0.0",
+  "description": "Repository with diferent algorithms and exercises to learn and improve my coding skills",
+  "main": "-",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignacioPastor/code-algorithms.git"
+  },
+  "author": "Ignacio Pastor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignacioPastor/code-algorithms/issues"
+  },
+  "homepage": "https://github.com/ignacioPastor/code-algorithms#readme",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
