@@ -1,5 +1,3 @@
-
-
 const checkLevel = (obj1, obj2) => {
   if (Array.isArray(obj1) !== Array.isArray(obj2)) return false;
   if (Array.isArray(obj1)) {
