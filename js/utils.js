@@ -33,12 +33,12 @@ function getArrNumber(str) {
  */
 function getBiDimensionalArray(text, length) {
   const elements = text.replace(/\r?\n|\r/g, ' ')
-                          .split(' ')
-                          .filter(p => p !== '');
+    .split(' ')
+    .filter(p => p !== '');
 
   const arr = [];
   for (let i = 0; i < length; i++) {
-      arr.push(elements.slice(i*length, i*length + length).join(' '));
+    arr.push(elements.slice(i * length, i * length + length).join(' '));
   }
   return arr.map(a => getArrNumber(a))
 }

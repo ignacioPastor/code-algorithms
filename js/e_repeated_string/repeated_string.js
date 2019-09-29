@@ -1,4 +1,4 @@
-function repeatedString(s, n) {
+const repeatedString = (s, n) => {
   const CHAR_TO_FIND = 'a';
 
   const nFindOccOnInput = countLetterOcc(s, CHAR_TO_FIND);
@@ -8,14 +8,12 @@ function repeatedString(s, n) {
   const nFindOccOnPartialSection = countLetterOcc(partialSectionInput, CHAR_TO_FIND)
 
   return (nFullInputRepetition * nFindOccOnInput) + nFindOccOnPartialSection;
-}
+};
 
-function countLetterOcc(text, letter) {
+const countLetterOcc = (text, letter) => {
   return (text.match(new RegExp(letter, 'gi')) || []).length;
+};
+
+module.exports = {
+  repeatedString
 }
-
-
-// Test section
-
-console.log(repeatedString('aba', 10)) // Expect 7
-console.log(repeatedString('a', 1000000000000)) // Expect 1000000000000

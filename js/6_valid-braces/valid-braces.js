@@ -1,4 +1,4 @@
-function validBraces(braces) {
+const validBraces = braces => {
   let pairs = ['()', '[]', '{}'];
   let mod;
 
@@ -13,7 +13,8 @@ function validBraces(braces) {
   } while (mod === true);
 
   return braces === '';
-}
+};
 
-console.log(validBraces("()"));
-console.log(validBraces("[(])"));
+module.exports = {
+  validBraces
+}

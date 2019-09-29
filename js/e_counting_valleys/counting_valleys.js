@@ -1,4 +1,4 @@
-function countingValleys(n, s) {
+const countingValleys = (n, s) => {
   let nValleys = 0;
   [...s].reduce((previousElevation, step) => {
       const currentElevation = previousElevation + (step === 'D' ? -1 : 1);
@@ -8,10 +8,8 @@ function countingValleys(n, s) {
       return currentElevation;
   }, 0);
   return nValleys;
+};
+
+module.exports = {
+  countingValleys
 }
-
-
-// Testing section
-
-console.log(countingValleys(8, 'UDDDUDUU')); // Expected 1
-console.log(countingValleys(12, 'DDUUDDUDUUUD')); // Expected 2
