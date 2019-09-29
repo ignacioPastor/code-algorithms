@@ -2,7 +2,7 @@ const streetFighterSelection = (fighters, position, moves) => {
   return moves.reduce((acc, val) => 
     manageMovement(val, fighters, acc.position, acc.breadcrumb), { position, breadcrumb: []})
   .breadcrumb;
-}
+};
 
 const manageMovement = (typeMovement, fighters, position, breadcrumb) => {
   switch (typeMovement) {
@@ -11,8 +11,8 @@ const manageMovement = (typeMovement, fighters, position, breadcrumb) => {
     case "left": return makeMovement([0, -1], fighters, position, breadcrumb);
     case "right": return makeMovement([0, 1], fighters, position, breadcrumb);
   }
+};
 
-}
 const makeMovement = (movement, fighters, position, breadcrumb) => {
   const movVertical = position[0] + movement[0];
 
@@ -32,7 +32,7 @@ const makeMovement = (movement, fighters, position, breadcrumb) => {
       };
   }
   return { position, breadcrumb: breadcrumb.concat(fighters[position[0]][position[1]]) };
-}
+};
 
 module.exports = {
   streetFighterSelection

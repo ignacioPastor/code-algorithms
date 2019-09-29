@@ -13,7 +13,7 @@ const validBraces = braces => {
   } while (mod === true);
 
   return braces === '';
-}
+};
 
 module.exports = {
   validBraces
