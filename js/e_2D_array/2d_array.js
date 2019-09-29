@@ -1,5 +1,3 @@
-const { getBiDimensionalArray } = require('../utils');
-
 const hourglassSum = arr => {
   let maxSum;
 

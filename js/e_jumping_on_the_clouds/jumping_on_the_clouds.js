@@ -1,5 +1,4 @@
-
-function jumpingOnClouds(c) {
+const jumpingOnClouds = c => {
   let nJumps = 0;
   let index = 2;
   while (index <= c.length -1) {
@@ -14,7 +13,7 @@ function jumpingOnClouds(c) {
     return nJumps + 1;
   }
   return nJumps;
-}
+};
 
 module.exports = {
   jumpingOnClouds
